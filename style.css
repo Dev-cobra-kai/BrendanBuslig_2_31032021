@@ -1,4 +1,8 @@
-h1
+nav
 {
    color: #0065FC ; /* Les titres seront bleu */
+}
+ul 
+{
+  list-style-type: none; /* Supprimer les puces de la liste à puces */
 }
