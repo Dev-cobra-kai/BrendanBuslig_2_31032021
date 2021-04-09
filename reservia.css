@@ -1,0 +1,44 @@
+nav
+{
+   color: #0065FC ; /* Les titres seront bleu */
+}
+ul 
+{
+  list-style-type: none; /* Supprimer les puces de la liste à puces */
+}
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('../images/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('../images/Raleway/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body, head
+{
+    font-family: 'Raleway';
+    color: #181818;
+    background-color: #F2F2F2;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+    margin-right: 15px;
+}
+/* Footer */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding-top: 25px;
+}
