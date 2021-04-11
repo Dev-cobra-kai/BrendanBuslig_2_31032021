@@ -1,22 +1,14 @@
-nav
-{
-   color: #0065FC ; /* Les titres seront bleu */
-}
-ul 
-{
-  list-style-type: none; /* Supprimer les puces de la liste à puces */
-}
 /* Définition des polices personnalisées */
 
 @font-face
 {
     font-family: 'Raleway';
-    src: url('../images/Raleway/Raleway-Italic-VariableFont_wght.ttf');
-    src: url('../images/Raleway/Raleway-VariableFont_wght.ttf');
+    src: url('images/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('images/Raleway/Raleway-VariableFont_wght.ttf');
     font-weight: normal;
     font-style: normal;
 }
-body, head
+body, head /* police + couleur */
 {
     font-family: 'Raleway';
     color: #181818;
@@ -25,15 +17,101 @@ body, head
 
 /* Navigation */
 
+header
+{
+    display : flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 nav ul
 {
     list-style-type: none;
     display: flex;
 }
+
 nav li
 {
     margin-right: 15px;
 }
+
+nav a
+{
+    font-size: 1.3em;
+    color:  #0065FC;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+#filtres
+{
+    font-size: 1.3em;
+    color:  #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav a:hover
+{
+    color:  #0065FC;
+    border-bottom: 3px solid  #0065FC;
+}
+
+/* Images + Corps */
+
+.Hébergements img
+{
+    width: 200px;
+    height: 100px;
+    margin: 3px;
+    
+}
+.Hébergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Populaires img
+{
+    width: 200px;
+    height: 100px;
+}
+.Populaires
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Activites img
+{
+    width: 200px;
+    height: 100px;
+}
+.Activites
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Etoiles */
+
+.fas
+{
+    color: blue;
+}
+.fas fa-star gris
+{
+    color: grey;
+}
+
 /* Footer */
 
 footer
@@ -41,4 +119,9 @@ footer
     display: flex;
     background-color: #F2F2F2;
     padding-top: 25px;
+    list-style-type: none;
+}
+.a_propos ul,.nos_hebergements ul, .assistance ul
+{
+    list-style-type: none;
 }
