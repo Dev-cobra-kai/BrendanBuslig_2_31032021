@@ -12,7 +12,6 @@ body, head /* police + couleur */
 {
     font-family: 'Raleway';
     color: #181818;
-    background-color: #F2F2F2;
 }
 
 /* Navigation */
@@ -41,73 +40,204 @@ nav a
     padding-bottom: 3px;
     text-decoration: none;
 }
-#filtres
-{
-    font-size: 1.3em;
-    color:  #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
 nav a:hover
 {
     color:  #0065FC;
     border-bottom: 3px solid  #0065FC;
 }
 
+/* Recherche */
+
+.fas.fa-map-marker-alt
+{
+    display: inline-block;
+    background: #F2F2F2;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+    border-radius: 10px 5px 5px 10px;
+    font-size: large;
+}
+
+#ville
+{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: large;
+}
+
+button
+{
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 10px 10px 5px;
+    font-size: large;
+}
+
+/* Filtres */
+
+#filtres ul
+{
+	display: flex;
+}
+#filtres ul li
+{
+    list-style-type: none;
+    margin: 5px;
+    border-radius: 22px;
+    background: white;
+    border: 1px solid #fafafa;
+}
+#filtres ul li i
+{
+    display: inline-block;
+    background: #DEEBFF;
+    padding: 10px;
+    border-radius: 50%;
+    color: #0065FC;
+}
+#filtres ul li span
+{
+    display: inline-block;
+    padding-right: 10px;
+}
+.fas.fa-info
+{
+    display: inline-block;
+    padding: 10px;
+    border: solid;
+    border-radius: 50px;
+    color: blue;
+    border-color: #F2F2F2;
+}
+
 /* Images + Corps */
 
-.Hébergements img
+/* Hébergements + Populaires */
+
+#hebergements-populaires
 {
-    width: 200px;
-    height: 100px;
-    margin: 3px;
-    
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 40%;
+  margin-top: 20px;
+  margin-bottom: 2%;
 }
-.Hébergements
+
+/* Hébergements à Marseille */
+
+.Hebergements
+ {
+   background: green;
+   padding: 20px;
+   border-radius: 20px;
+   margin-top: 20px;
+   margin-bottom: 60%;
+}
+.Hebergements .contenu-heb
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-radius: 20px;
 }
-.Populaires img
+.Hebergements .contenu-heb article
 {
-    width: 200px;
-    height: 100px;
+   background: #F2F2F2;
+   margin-bottom: 30px;
+   padding: 10px;
+   border-radius: 10px 10px 10px 10px;
+   width: calc(33% - 30px);
 }
+.Hebergements .contenu-heb article img
+{
+   width: 100%;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 5px 5px 0px 0px;
+   
+}
+
+/* Les plus populaires */
+
 .Populaires
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    background: blue;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 70%;
 }
-.Activites img
-{
-    width: 200px;
-    height: 100px;
-}
-.Activites
+.Populaires .contenu-pop
 {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
 }
+.Populaires .contenu-pop article
+{
+    background: red;
+    margin-bottom: 30px;
+    padding: 50px;
+    width: calc(70% - 20px);
+}
+ .Populaires .contenu-pop article img
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0px;
+}
+.Populaires .fas.fa-chart-line
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size:xx-large;
+}
+.coeur_eau, .hotel_soleil, .hotel_bleu_blanc
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Activités à Marseille */
+
+
+.Activites .contenu-act
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    
+}
+.Activites .contenu-act article
+{
+    
+    margin-bottom: 30px;
+    padding: 10px;
+    width: calc(33% - 20px);
+ }
+.Activites .contenu-act article img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 5px;
+}
+
 
 /* Etoiles */
 
-.fas
+.fas.fa-star.bleu
 {
     color: blue;
 }
-.fas fa-star gris
+.fas.fa-star.gris
 {
     color: grey;
 }
@@ -118,10 +248,15 @@ footer
 {
     display: flex;
     background-color: #F2F2F2;
-    padding-top: 25px;
-    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align:left;
 }
-.a_propos ul,.nos_hebergements ul, .assistance ul
+.a_propos li, .nos_hebergements li, .assistance li
 {
-    list-style-type: none;
+   list-style-type: none;
+  }
+h3
+{
+    padding-left: 40px;
 }
