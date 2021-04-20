@@ -55,7 +55,7 @@ nav a:hover
     padding: 10px;
     border-radius: 50%;
     color: black;
-    border-radius: 10px 5px 5px 10px;
+    border-radius: 20px 0px 0px 20px;
     font-size: large;
 }
 
@@ -73,7 +73,7 @@ button
     background: blue;
     color: white;
     padding: 10px;
-    border-radius: 5px 10px 10px 5px;
+    border-radius: 0px 15px 15px 0px;
     font-size: large;
 }
 
@@ -120,22 +120,23 @@ button
 
 #hebergements-populaires
 {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 1fr 40%;
-  margin-top: 20px;
-  margin-bottom: 2%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 40%;
+    margin-top: 20px;
+    margin-bottom: 2%;
+    padding-bottom: 0;
 }
 
 /* Hébergements à Marseille */
 
 .Hebergements
- {
+{
    background: green;
    padding: 20px;
    border-radius: 20px;
-   margin-top: 20px;
-   margin-bottom: 60%;
+   margin-right: 25px;
+   margin-bottom: auto;
 }
 .Hebergements .contenu-heb
 {
@@ -148,8 +149,8 @@ button
 {
    background: #F2F2F2;
    margin-bottom: 30px;
-   padding: 10px;
-   border-radius: 10px 10px 10px 10px;
+   padding: 5px;
+   border-radius: 20px 20px 20px 20px;
    width: calc(33% - 30px);
 }
 .Hebergements .contenu-heb article img
@@ -157,8 +158,7 @@ button
    width: 100%;
    height: 100px;
    object-fit: cover;
-   border-radius: 5px 5px 0px 0px;
-   
+   border-radius: 20px 20px 0px 0px;
 }
 
 /* Les plus populaires */
@@ -166,11 +166,10 @@ button
 .Populaires
 {
     background: blue;
-    padding: 20px;
     border-radius: 20px;
-    margin-left: 45px;
-    margin-top: 20px;
-    margin-bottom: 70%;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-left: 25px;
 }
 .Populaires .contenu-pop
 {
@@ -182,15 +181,16 @@ button
 {
     background: red;
     margin-bottom: 30px;
-    padding: 50px;
-    width: calc(70% - 20px);
+    padding-left: 10%;
+    width: calc(90% - 20px);
+    border-radius: 20px 20px 20px 20px;
 }
  .Populaires .contenu-pop article img
 {
-    width: 100%;
-    height: 150px;
+    width: 170px;
+    height: 140px;
     object-fit: cover;
-    margin: 0px;
+    border-radius: 20px 0px 0px 20px;
 }
 .Populaires .fas.fa-chart-line
 {
@@ -201,11 +201,10 @@ button
 .coeur_eau, .hotel_soleil, .hotel_bleu_blanc
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* Activités à Marseille */
-
 
 .Activites .contenu-act
 {
@@ -213,22 +212,59 @@ button
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 20px;
-    
 }
 .Activites .contenu-act article
 {
-    
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 30%;
     margin-bottom: 30px;
-    padding: 10px;
+    padding: 20px;
     width: calc(33% - 20px);
- }
-.Activites .contenu-act article img
+}
+.Activites .contenu-act .vieux_port img
+{
+    width: 10%;
+    height: 80px;
+    object-fit: cover;
+    margin: 5px;
+}
+.Activites .contenu-act .fort_pomegues img
 {
     width: 100%;
     height: 120px;
     object-fit: cover;
     margin: 5px;
 }
+.Activites .contenu-act .iles_frioul img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 5px;
+}
+.Activites .contenu-act .parc_calanques img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 5px;
+}
+.Activites .contenu-act .notre_dame img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 5px;
+}
+.Activites .contenu-act .parc_longchamp img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 5px;
+}
+
 
 
 /* Etoiles */
