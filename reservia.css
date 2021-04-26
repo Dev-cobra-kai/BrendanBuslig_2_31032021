@@ -15,6 +15,8 @@ body, head
 {
     font-family: 'Raleway';
     color: #181818;
+    margin: 0px;
+    padding: 0px;
 }
 h2
 {
@@ -394,29 +396,25 @@ h3
 
 /* Media Queries */
 
-@media screen and (max-width: 1200px)
+
+
+
+@media screen and (max-width: 800px)
 {
-    body
+    .Hebergements, .Populaires , .Activites 
     {
-        font-size: 10px;
-        padding: 50px;
-    }
-    #hebergement_vacances
-    {
-      width: 100%;
-    }
+       width: 100%;
+       border-right: none ;
+       border-left: none;
+       margin-right: 0px;
+       margin-left: 0px;
+    }    
 }
 
 /* Navigation */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
-    nav
-    {
-        width: 100%;
-        text-align: left;
-    }
-    
     nav ul
     {
         flex-wrap: wrap;
@@ -429,7 +427,7 @@ h3
     
     nav a
     {
-        font-size: 1.1em;
+        font-size: 3.1em;
     }
     
     nav a:hover
@@ -440,7 +438,7 @@ h3
 
 /* Recherche */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
     .search
     {
@@ -450,7 +448,7 @@ h3
 
 /* Filtres */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
     #filtres
     {
@@ -467,40 +465,38 @@ h3
 
 /* Hébergements à Marseille */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
-    .hebergements
+    .Hebergements
     {
-      width: 100%;
       flex-wrap: wrap;
-
     }
     
 }
     
 /* Les plus populaires */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
     .Populaires
     {
-      width: 100%;
+        flex-wrap: wrap;
     }
 }
 
 /* Activités à Marseille */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
     .Activites
     {
-      width: 100%;
+        flex-wrap: wrap;
     }
 }
 
 /* Footer */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 800px)
 {
     footer
     {
