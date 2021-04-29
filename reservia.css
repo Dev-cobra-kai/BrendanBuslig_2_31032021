@@ -99,6 +99,7 @@ nav a:hover
     font-size: large;
 }
 
+
 /* Filtres */
 
 #filtres
@@ -469,18 +470,37 @@ h3
         flex-wrap: wrap;
         padding-left: 40%;
     }
- 
 }
 
 /* Recherche */
 
 @media screen and (max-width: 800px)
 {
-    .search
+    .search button
     {
-        width: 100%;
+        opacity: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .search .icone-loupe
+    {
+        position: relative;
+        right: 100px;
+        background: blue;
+        color: white;
+        padding: 15px;
+        border-radius: 15px 15px 15px 15px;
+        font-size: large;
     }
 }
+@media screen and (min-width: 800px)
+{
+    .search .icone-loupe
+    {
+        opacity: 0;
+    }
+}
+
 
 /* Filtres */
 
