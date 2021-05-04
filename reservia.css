@@ -4,46 +4,49 @@
 {
     font-family: 'Raleway';
     src: url('images/Raleway/Raleway-Italic-VariableFont_wght.ttf');
-    src: url('images/Raleway/Raleway-VariableFont_wght.ttf');
+    src: url('images/Raleway/Raleway-VariableFont_wght.ttf'); 
+    src: url('images/Raleway/Raleway-Regular.ttf');
+    src: url('images/Raleway/Raleway-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 /* police + couleur + taille police */
 
-body, head 
+body, header
 {
-    font-family: 'Raleway';
-    color: #181818;    
+    font-family: 'Raleway-Regular', sans-serif;
+    color: #181818;  
 }
 h2
 {
-    font-size: 20px;
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: 25px;
 }
 #logo
 {
     margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 /* Navigation */
 
 header
 {
-    display : flex;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-right: 50px;
- 
 }
 nav ul
 {
     list-style-type: none;
     display: flex;
+    margin-top: 50px;
 }
 nav li
 {
-    margin-right: 15px;
+    margin-right: 70px;
 }
 nav a
 {
@@ -55,7 +58,12 @@ nav a
 nav a:hover
 {
     color:  #0065FC;
-    border-bottom: 3px solid  #0065FC;
+    border-top: 3px solid  #0065FC;
+    padding-top: 50px;
+}
+.select-act
+{
+    color: grey;
 }
 
 /* Recherche */
@@ -76,29 +84,33 @@ nav a:hover
     justify-content: center;
     background: #F2F2F2;
     padding: 10px 18px 10px 18px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
     font-size: 18px;
 }
 .search #ville
 {
-    background-color: white;
-    color: black;
+    color: #000000;
     padding: 10px;
     font-size: large;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: 0;
     border-right: 0;
+    font-weight: bold;
 }
 .search button
 {
-    background: blue;
+    background: #0065FC;
     color: white;
     padding: 10px;
     border-radius: 0px 15px 15px 0px;
     font-size: large;
 }
-
+.search button:hover
+{
+    color: black;
+    cursor: pointer;
+}
 
 /* Filtres */
 
@@ -115,23 +127,44 @@ nav a:hover
 {
     margin: 5px;
     font-weight: bold;
-    
+    align-items: center;
+}
+#filtres h2
+{
+    margin: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 #filtres ul
 {
 	display: flex;
-    
 }
 #filtres ul li
 {
     display: flex;
     list-style-type: none;
     margin: 5px;
-    border: 2px solid #F2F2F2;
+    border-top: solid #d9d9d9 3px;
+    border-right: solid #d9d9d9 3px;
+    border-bottom: solid #d9d9d9 3px;
     margin-bottom: 20px;
-    width: 260px;
     border-radius: 10em;
-    
+}
+.economique
+{
+    width: 230px;
+}
+.familial
+{
+    width: 230px;
+}
+.romantique
+{
+    width: 230px;
+}
+.animaux
+{
+    width: 265px;
 }
 
 /* Logo Filtres */
@@ -142,11 +175,15 @@ nav a:hover
     align-items: center;
     justify-content: center;
     background: #DEEBFF;
-    width: 30%;
-    height: 50px;
     border-radius: 10em;
     color: #0065FC;
-    border-color: #DEEBFF;
+    border: #0065FC;
+    width: 45%;
+    height: 3.5em;
+}
+#filtres li .animaux
+{
+width: 15em;
 }
 #filtres ul li span
 {
@@ -155,7 +192,6 @@ nav a:hover
     padding-left: 10px;
     padding-right: 10px;
     width: 100%; 
-    
 }
 .fas.fa-info
 {
@@ -167,9 +203,10 @@ nav a:hover
     padding-top: 5px;
     padding-right: 5px;
     border-radius: 50%;
-    color: blue;
+    color: #0065FC;
     border-color: #F2F2F2;
     margin-left: 50px;
+    margin-right: 10px;
 }
 
 /* Images + Corps + Etoiles */
@@ -190,7 +227,7 @@ nav a:hover
 #hebergements-populaires
 {
     display: grid;
-    grid-template-columns: 880px 420px;
+    grid-template-columns: 980px 520px;
     gap: 0px 40px;
     margin-left: 50px;
     grid-template-areas:
@@ -218,6 +255,7 @@ nav a:hover
    flex-wrap: wrap;
    justify-content: space-between;
    border-radius: 20px;
+   padding-top: 20px;
 }
 .Hebergements .contenu-heb article
 {
@@ -229,8 +267,8 @@ nav a:hover
 }
 .Hebergements .contenu-heb article img
 {
-   width: 235px;
-   height: 110px;
+   width: 265px;
+   height: 120px;
    object-fit: cover;
    border-radius: 20px 20px 0px 0px;
    padding-right: 10px;
@@ -254,11 +292,12 @@ nav a:hover
 {
     background: #F2F2F2;
     border-radius: 20px;
-    padding-left: 35px;
+    padding-left: 40px;
     padding-right: 40px;
-    padding-top: 25px;
+    padding-top: 35px;
     margin-bottom: 66px;
     margin-top: 40px;
+    margin-left: 10px;
 }
 .Populaires .logo-pop
 {
@@ -271,25 +310,32 @@ nav a:hover
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    padding-top: 20px;
 }
 .Populaires .contenu-pop article
 {
     background: white;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-left: 6px;
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 340px;
+    width: 410px;
+    height: 160px;
     border-radius: 20px 20px 20px 20px;
 }
  .Populaires .contenu-pop article img
 {
-    width: 130px;
-    height: 140px;
+    width: 170px;
+    height: 160px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     float: left;
     margin: 0px 20px 0px 0px;
+}
+.Populaires .contenu-pop article
+{
+    font-size: 1.1em;
 }
 .Populaires .fas.fa-chart-line
 {
@@ -322,7 +368,6 @@ nav a:hover
 {
     margin-left: 70px;
 }
-
 .Activites .contenu-act p
 {
     padding-left: 20px;
@@ -365,6 +410,7 @@ nav a:hover
 }
 .Activites .contenu-act .iles_frioul
 {
+   background: #F2F2F2;
    margin-bottom: 20px;
    margin-top: 50px;
    border-radius: 20px 20px 20px 20px;
@@ -382,7 +428,7 @@ nav a:hover
 }
 .Activites .contenu-act .notre_dame
 {
-    background: #F2F2F2;
+   background: #F2F2F2;
    margin-bottom: 50px;
    border-radius: 20px 20px 20px 20px;
    height: 205px;
@@ -453,11 +499,11 @@ h3
 {
     #hebergements-populaires
     {
-       width: 100%;
-       display: flex;
-       flex-direction: column-reverse;
-       border-left: none;
-       margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-left: none;
+    margin-left: 0px;
     }    
 }
 
@@ -465,10 +511,61 @@ h3
 
 @media screen and (max-width: 800px)
 {
-    nav ul
+    header 
     {
-        flex-wrap: wrap;
-        padding-left: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    #logo
+    {
+    padding: 0px;
+    margin: 0;
+    position: absolute;
+    bottom: 20;
+    }
+    #logo img
+    {
+    margin-left: 50px;
+    height: 4.5em;
+    }
+    nav ul 
+    {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 1.4em;
+    }
+    nav li 
+    {
+    padding: 0;
+    text-align: center;
+    }
+    nav li a:hover
+    {
+    border-top: transparent;
+    }
+    .select-heb
+    {
+    border-bottom: 3px solid #f2f2f2;
+    }
+    .select-heb:hover
+    {
+    border-bottom: 3px solid #0065fc;
+    }
+    .select-act
+    {
+    border-bottom: 3px solid #f2f2f2;
+    }
+    .select-act:hover
+    {
+    border-bottom: 3px solid #0065fc;
+    }
+    .select-ins
+    {
+    position: relative;
+    bottom: 40px;
+    left: 50px;
     }
 }
 
@@ -476,31 +573,41 @@ h3
 
 @media screen and (max-width: 800px)
 {
+    .search, .titre
+    {
+    flex-wrap: wrap;
+    margin-left: 3em;
+    font-weight: bold;
+    padding-top: 15px;
+    }
     .search button
     {
-        opacity: 0;
-        padding-left: 0px;
-        padding-right: 0px;
+    opacity: 0;
+    padding-left: 0px;
+    padding-right: 0px;
     }
     .search .icone-loupe
     {
-        position: relative;
-        right: 100px;
-        background: blue;
-        color: white;
-        padding: 15px;
-        border-radius: 15px 15px 15px 15px;
-        font-size: large;
+    position: relative;
+    right: 100px;
+    background: #0065FC;
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: large;
+    }
+    .search .icone-loupe
+    {
+    cursor: pointer;
     }
 }
 @media screen and (min-width: 800px)
 {
     .search .icone-loupe
     {
-        opacity: 0;
+    opacity: 0;
     }
 }
-
 
 /* Filtres */
 
@@ -508,28 +615,34 @@ h3
 {
     #filtres
     {
-        display: flex;
-        flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;    
     }
-    #filtres span
+    #filtres h2
     {
-        font-size: 20px;
-        margin-left: 12%;
+    padding-right: 17em;
     }
     #filtres ul
     {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 17em;
     }
     .info
     {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 35px;
     }
     .info span
     {
-        padding-left: 20px;
+    padding-left: 15px;
+    margin-right: 35px;
+    }
+    .familial
+    {
+    position: absolute;
+    right: 25px;
     }
 }
 
@@ -539,7 +652,12 @@ h3
 {
     .Hebergements 
     {
-        margin: unset;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-left: -1.9em;
+        padding-top: 2em;
+        margin-bottom: auto;
     } 
     .Hebergements .contenu-heb
     {
@@ -548,12 +666,15 @@ h3
     }
     .Hebergements .contenu-heb article
     {
-        width: 350px;
-        height: 250px;
+        margin-bottom: 40px;
+        border-radius: 20px 20px 20px 20px;
+        width: 500px;
+        height: 240px;
+        box-shadow: 0px 0px 15px 0px #0000002e;
     }
     .Hebergements .contenu-heb article img
     {
-        width: 350px;
+        width: 500px;
         height: 130px;
     }
 }
@@ -564,11 +685,38 @@ h3
 {
     .Populaires
     {
-        width: 90%;
+        position: relative;
+        right: 15px;
+        width: 460px;
         display: flex;
         flex-direction: column;
+        border-radius: 0%;
+        margin-bottom: auto;
     }
-   
+    .Populaires .contenu-pop article
+    {
+        padding-left: 20px;
+        padding-right: 65px;
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+        right: 20px;
+    }
+    .Populaires .contenu-pop article img
+    {
+        width: 180px;
+        position: relative;
+        right: 15px;
+    }
+    .Populaires .contenu-pop article p
+    {
+        padding: 2px;
+    }
+    .Populaires .contenu-pop article .star
+    {
+        padding-top: 18px;
+    }
+
 }
 
 /* Activités à Marseille */
@@ -581,56 +729,59 @@ h3
     }
     .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
     {
-       width: 400px;
+       width: 530px;
        height: 190px;
+       margin-top: 1em;
     }
     .vieux_port img, .parc_calanques img
     {
-       width: 400px;
-       height: 130px;
+       width: 530px;
+       height: 150px;
     }
     .Activites .contenu-act .fort_pomegues
     {
-        width: 400px;
-        height: 190px;
+        width: 530px;
+        height: 210px;
+        margin-top: 1em;
     }
     .fort_pomegues img
     {
-        width: 400px;
-        height: 130px;
+        width: 530px;
+        height: 150px;
     }
     .Activites .contenu-act .iles_frioul
     {
-        width: 400px;
-        height: 190px;
+        width: 530px;
+        height: 210px;
+        margin-top: 1em;
     }
     .iles_frioul img
     {
-       width: 400px;
-       height: 130px;
+       width: 530px;
+       height: 150px;
     }
     .Activites .contenu-act .notre_dame
     {
-        width: 400px;
-        height: 190px;
+        width: 530px;
+        height: 210px;
+        margin-top: 1em;
     }
     .notre_dame img
     {
-        width: 400px;
-        height: 130px;
+        width: 530px;
+        height: 150px;
     }
     .Activites .contenu-act .parc_longchamp
     {
-        width: 400px;
-        height: 190px;
+        width: 530px;
+        height: 210px;
+        margin-top: -0.6em;
     }
     .parc_longchamp img
     {
-        width: 400px;
-        height: 130px;
+        width: 530px;
+        height: 150px;
     }
-
-
 }
 
 /* Footer */
@@ -642,8 +793,13 @@ h3
         width: 100%;
         display: flex;
         flex-direction: column;
+        position: relative;
+        right: 70px;
     }
-
+    .a_propos , .nos_hebergements, .assistance
+    {
+        width: 43%;
+    }
 }
 
 
