@@ -938,8 +938,7 @@ h3
     }
     .Populaires .contenu-pop article
     {
-        width: auto;
-      
+        width: 100%;
     }
     .Populaires .contenu-pop article img
     {
@@ -1161,7 +1160,7 @@ h3
     #filtres ul li
     {
         display: flex;
-        width: 30%;
+        width: 20%;
     }
 }
 
@@ -1214,7 +1213,7 @@ h3
 {
     .Populaires
     {
-        width: 95%;
+        width: auto;
     }
     .Populaires .contenu-pop article
     {
@@ -1374,7 +1373,7 @@ h3
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
-    padding: 20px;
+    padding-left: 25px;
     font-size: 1.2em;
     padding-bottom: 0px;
     margin-bottom: 2em;
@@ -1408,8 +1407,8 @@ h3
     .select-ins
     {
     position: relative;
-    bottom: 70px;
-    left: 100px;
+    bottom: 30px;
+    left: 60px;
     }
 }
 
@@ -1467,7 +1466,9 @@ h3
     #filtres
     {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    padding: 0; 
+    margin: 0;
     }
     #filtres h2
     {
@@ -1479,8 +1480,9 @@ h3
     {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 40px;
     margin: 5px;
+    padding-top: 10px;
     }
     #filtres ul li
     {
@@ -1535,6 +1537,18 @@ h3
     {
         width: 100%;
         height: 130px;
+    }
+    .Hebergements h2
+    {
+        padding-left: 20px;
+    }
+    .Hebergements .contenu-heb p
+    {
+        padding-left: 10px;
+    }
+    .Hebergements .contenu-heb h3
+    {
+        padding-left: 20px;
     }
 }
     
@@ -1592,7 +1606,7 @@ h3
     }
     .Activites h2
     {
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
     {
@@ -1659,12 +1673,10 @@ h3
 {
     footer
     {
-        
         display: flex;
         flex-direction: column;
         position: relative;
         right: 70px;
-        margin: 0;
         width: 95%;
     }
     .a_propos , .nos_hebergements, .assistance
