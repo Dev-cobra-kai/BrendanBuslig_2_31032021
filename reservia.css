@@ -361,6 +361,7 @@ nav a:hover
     margin-left: 0;
     margin-right: 0;
     margin: 0;
+    padding: 20px;
     align-items: center;
 }
 .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
@@ -373,7 +374,7 @@ nav a:hover
 }
 .Activites h2
 {
-    margin-left: 2.4em;
+    margin-left: 2em;
 }
 .Activites .contenu-act h4
 {
@@ -398,7 +399,6 @@ nav a:hover
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
-
 .Activites .contenu-act .fort_pomegues
 {
    background: #F2F2F2;
@@ -1277,6 +1277,7 @@ h3
     {
         width: 530px;
         height: 150px;
+        object-fit: cover;
     }
     .Activites .contenu-act .parc_longchamp
     {
@@ -1288,6 +1289,7 @@ h3
     {
         width: 530px;
         height: 150px;
+        object-fit: cover;
     }
 }
 
@@ -1409,7 +1411,6 @@ h3
 
 @media screen and (min-width: 481px) and (max-width: 768px)
 {
-   
     .search button
     {
     opacity: 0;
@@ -1466,14 +1467,14 @@ h3
     #filtres h2
     {
     padding-top: 1em;
-    padding-right: 15em;
+    padding-right: 14em;
     margin: 0;
     }
     #filtres ul
     {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 0;
     margin: 5px;
     padding-top: 10px;
     }
@@ -1485,7 +1486,8 @@ h3
     .info
     {
     display: flex;
-    padding-bottom: 25px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     }
     .info span
     {
@@ -1530,6 +1532,7 @@ h3
     {
         width: 100%;
         height: 130px;
+        object-fit: cover;
     }
     .Hebergements h2
     {
@@ -1603,59 +1606,57 @@ h3
     }
     .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
     {
-       width: 500px;
+       width: 470px;
        height: 190px;
        margin-top: 1em;
     }
     .vieux_port img, .parc_calanques img
     {
-       width: 500px;
+       width: 470px;
        height: 150px;
     }
     .Activites .contenu-act .fort_pomegues
     {
-        width: 500px;
+        width: 470px;
         height: 210px;
         margin-top: 1em;
     }
     .fort_pomegues img
     {
-        width: 500px;
+        width: 470px;
         height: 150px;
-        object-fit: cover;
     }
     .Activites .contenu-act .iles_frioul
     {
-        width: 500px;
+        width: 470px;
         height: 210px;
         margin-top: 1em;
     }
     .iles_frioul img
     {
-       width: 500px;
+        width: 470px;
        height: 150px;
-       object-fit: cover;
     }
     .Activites .contenu-act .notre_dame
     {
-        width: 500px;
+        width: 470px;
         height: 210px;
         margin-top: 1em;
     }
     .notre_dame img
     {
-        width: 500px;
+        width: 470px;
         height: 150px;
     }
     .Activites .contenu-act .parc_longchamp
     {
-        width: 500px;
+        width: 470px;
         height: 210px;
         margin-top: -0.6em;
     }
     .parc_longchamp img
     {
-        width: 500px;
+        width: 470px;
         height: 150px;
     }
 }
@@ -1674,7 +1675,7 @@ h3
     }
     .a_propos , .nos_hebergements, .assistance
     {
-        width: 55%;
+        width: 60%;
     }
 }
 
