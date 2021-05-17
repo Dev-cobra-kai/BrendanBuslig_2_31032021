@@ -266,7 +266,7 @@ nav a:hover
    margin-bottom: 30px;
    padding: 5px;
    border-radius: 20px 20px 20px 20px;
-   width: calc(33% - 30px);
+   width: calc(34% - 30px);
 }
 .Hebergements .contenu-heb article img
 {
@@ -366,7 +366,7 @@ nav a:hover
 }
 .Activites h2
 {
-    margin-left: 2em;
+    margin-left: 2.3em;
 }
 .Activites .contenu-act h4
 {
