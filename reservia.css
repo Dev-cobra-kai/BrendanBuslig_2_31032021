@@ -151,6 +151,10 @@ nav a:hover
     margin-bottom: 20px;
     border-radius: 10em;
 }
+#filtres li:hover
+{
+    font-size: large;
+}
 .economique
 {
     width: 220px;
@@ -165,7 +169,7 @@ nav a:hover
 }
 .animaux
 {
-    width: 265px;
+    width: 270px;
 }
 
 /* Logo Filtres */
@@ -283,6 +287,10 @@ nav a:hover
 {
     margin: 0;
 }
+.Hebergements .contenu-heb article:hover
+{
+    cursor: pointer;
+}
 
 /* Les plus populaires */
 
@@ -370,6 +378,10 @@ nav a:hover
 .Activites .contenu-act h4
 {
     padding-left: 20px;
+}
+.Activites .contenu-act img:hover
+{
+    cursor: pointer;
 }
 .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
 {
@@ -1040,6 +1052,8 @@ h3
     .search .icone-loupe
     {
     opacity: 0;
+    position: absolute;
+    top:0
     }
 }
 
@@ -1236,9 +1250,9 @@ h3
     }
 }
 
-/* Ecrans en-dessous de 769 px */
+/* Ecrans entre 441 px et 768 px */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     #hebergements-populaires
     {
@@ -1253,12 +1267,14 @@ h3
 
 /* Navigation */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     header 
     {
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
     }
     #logo
     {
@@ -1267,49 +1283,56 @@ h3
     }
     #logo img
     {
-    margin-left: 50px;
-    height: 4.5em;
     position: absolute;
+    margin-left: 20px;
+    height: 4.5em;    
     }
-    nav ul 
+    nav 
     {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-    padding-left: 25px;
+    width: 100%;
+    }
+    nav ul
+    {
+    flex-wrap: wrap;
     font-size: 1.2em;
-    padding-bottom: 0px;
-    margin-bottom: 2em;
-    margin-top: 6em;
+    padding: unset;
+    width: 100%;
     }
     nav li 
     {
-    padding: 0;    
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+    margin-right: 0;
+    width: 45%;
     }
     nav li a:hover
     {
     border-top: transparent;
     }
     .select
-    {
-    border-bottom: 3px solid #f2f2f2;
+    {  
+    border-bottom: 3px solid #DEEBFF;
     width: 50%;
-    }
+    padding-bottom: 1em; 
+    padding-top: 4em; 
+    justify-content: space-between;
+    }    
     .select:hover
     {
     border-bottom: 3px solid #0065fc;
     }
     .select-ins
     {
-    position: relative;
-    bottom: 70px;
-    left: 40px;
+    position: absolute;
+    top: 2em;
+    right: 0em;
     }
 }
 
 /* Recherche */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     .search button
     {
@@ -1355,7 +1378,7 @@ h3
 
 /* Filtres */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     #filtres
     {
@@ -1398,7 +1421,7 @@ h3
 
 /* Hébergements à Marseille */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     .Hebergements 
     {
@@ -1445,14 +1468,14 @@ h3
     
 /* Les plus populaires */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     .Populaires
     {
         width: 100%;
         display: flex;
         flex-direction: column;
-        border-radius: 0%;
+        border-radius: 0;
         margin: 0;  
         padding: 0;
     }
@@ -1488,7 +1511,7 @@ h3
 
 /* Activités à Marseille */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     .Activites
     {
@@ -1501,64 +1524,64 @@ h3
     }
     .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
     {
-       width: 470px;
+       width: 410px;
        height: 190px;
        margin-top: 1em;
     }
     .vieux_port img, .parc_calanques img
     {
-       width: 470px;
+        width: 100%;
        height: 150px;
     }
     .Activites .contenu-act .fort_pomegues
     {
-        width: 470px;
+        width: 410px;
         height: 210px;
         margin-top: 1em;
     }
     .fort_pomegues img
     {
-        width: 470px;
+        width: 100%;
         height: 150px;
     }
     .Activites .contenu-act .iles_frioul
     {
-        width: 470px;
+        width: 410px;
         height: 210px;
         margin-top: 1em;
     }
     .iles_frioul img
     {
-        width: 470px;
+        width: 100%;
        height: 150px;
     }
     .Activites .contenu-act .notre_dame
     {
-        width: 470px;
+        width: 410px;
         height: 210px;
         margin-top: 1em;
     }
     .notre_dame img
     {
-        width: 470px;
+        width: 100%;
         height: 150px;
     }
     .Activites .contenu-act .parc_longchamp
     {
-        width: 470px;
+        width: 410px;
         height: 210px;
         margin-top: -0.6em;
     }
     .parc_longchamp img
     {
-        width: 470px;
+        width: 100%;
         height: 150px;
     }
 }
 
 /* Footer */
 
-@media screen and (max-width: 769px)
+@media screen and (min-width: 441px) and (max-width: 768px)
 {
     footer
     {
@@ -1570,13 +1593,13 @@ h3
     }
     .a_propos , .nos_hebergements, .assistance
     {
-        width: 60%;
+        width: 80%;
     }
 }
 
-/* Ecrans entre 350 px et 480 px */
+/* Ecrans entre 350 px et 440 px */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     #hebergements-populaires
     {
@@ -1591,12 +1614,14 @@ h3
 
 /* Navigation */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     header 
     {
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
     }
     #logo
     {
@@ -1605,15 +1630,56 @@ h3
     }
     #logo img
     {
-    margin-left: 50px;
-    height: 4.5em;
     position: absolute;
+    margin-left: 20px;
+    height: 4.5em;    
+    }
+    nav 
+    {
+    width: 100%;
+    }
+    nav ul
+    {
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    padding: unset;
+    width: 100%;
+    }
+    nav li 
+    {
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+    margin-right: 0;
+    width: 45%;
+    }
+    nav li a:hover
+    {
+    border-top: transparent;
+    }
+    .select
+    {  
+    border-bottom: 3px solid #DEEBFF;
+    width: 50%;
+    padding-bottom: 1em; 
+    padding-top: 4em; 
+    justify-content: space-between;
+    }    
+    .select:hover
+    {
+    border-bottom: 3px solid #0065fc;
+    }
+    .select-ins
+    {
+    position: absolute;
+    top: 2em;
+    right: 0em;
     }
 }
 
 /* Recherche */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     .search button
     {
@@ -1625,10 +1691,13 @@ h3
     }
     .search .icone-loupe
     {
+    position: relative;
+    right: 40px;
     background: #0065FC;
     color: white;
+    padding: 17px;
     border-radius: 15px 15px 15px 15px;
-    font-size: small;
+    font-size: large;
     }
     .search .icone-loupe
     {
@@ -1637,16 +1706,16 @@ h3
     .search input
     {
     padding: 0;
-    width: 50%;
+    width: 11em;
     }
     .search .icone-localisation
     {
     padding: 0;
     height: 3em;
-    width: 3em;
+    width: 3.5em;
     }
 }
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 1200px)
 {
     .search .icone-loupe
     {
@@ -1656,7 +1725,7 @@ h3
 
 /* Filtres */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     #filtres
     {
@@ -1676,30 +1745,31 @@ h3
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 5px;
     padding-top: 10px;
+    
     }
     #filtres ul li
     {
     display: flex;
     margin: 5px;
+    font-size: medium;
     }
     .info
     {
     display: flex;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
     }
     .info span
     {
-    padding-left: 15px;
-    margin-right: 35px;
+    margin-right: 20px;
     }
 }
 
 /* Hébergements à Marseille */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     .Hebergements 
     {
@@ -1746,7 +1816,7 @@ h3
     
 /* Les plus populaires */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     .Populaires
     {
@@ -1769,33 +1839,31 @@ h3
     .Populaires .contenu-pop article
     {
         margin-left: 20px;
-        height: 175px;
-        width: 91%;
+        height: 165px;
+        width: 88%;
     }
     .Populaires .contenu-pop article img
     {
         width: 50%;
-        height: 175px; 
+        height: 165px; 
     }
     .Populaires .contenu-pop article h4
     {
-        padding: 2px;
-        font-size: smaller;
+        font-size: small;
     }
     .Populaires .contenu-pop article p
     {
-        padding: 2px;
-        font-size: smaller;
+        font-size: small;
     }
     .Populaires .contenu-pop article .star
     {
-        padding-top: 18px;
+        padding: 0;
     }
 }
 
 /* Activités à Marseille */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     .Activites
     {
@@ -1808,21 +1876,20 @@ h3
     }
     .Activites .contenu-act .vieux_port, .Activites .contenu-act .parc_calanques
     {
-        width: 300px;
-        height: 190px;
-        margin-top: 1em;
+       width: 300px;
+       height: 190px;
+       margin-top: 1em;
     }
     .vieux_port img, .parc_calanques img
     {
         width: 100%;
-        height: 150px;
+       height: 150px;
     }
     .Activites .contenu-act .fort_pomegues
     {
         width: 300px;
         height: 210px;
         margin-top: 1em;
-        margin-left: 0.5em;
     }
     .fort_pomegues img
     {
@@ -1834,19 +1901,17 @@ h3
         width: 300px;
         height: 210px;
         margin-top: 1em;
-        margin-left: 0.5em;
     }
     .iles_frioul img
     {
         width: 100%;
-        height: 150px;
+       height: 150px;
     }
     .Activites .contenu-act .notre_dame
     {
         width: 300px;
         height: 210px;
         margin-top: 1em;
-        margin-left: 0.5em;
     }
     .notre_dame img
     {
@@ -1857,8 +1922,7 @@ h3
     {
         width: 300px;
         height: 210px;
-        margin-top: 1em;
-        margin-left: 0.5em;
+        margin-top: -0.6em;
     }
     .parc_longchamp img
     {
@@ -1869,7 +1933,7 @@ h3
 
 /* Footer */
 
-@media screen and (min-width: 350px) and (max-width: 480px)
+@media screen and (min-width: 350px) and (max-width: 440px)
 {
     footer
     {
@@ -1877,11 +1941,12 @@ h3
         flex-direction: column;
         position: relative;
         right: 70px;
-        width: 95%;
+        width: 92%;
     }
     .a_propos , .nos_hebergements, .assistance
     {
-        width: 85%;
+        width: 80%;
     }
 }
+
 
